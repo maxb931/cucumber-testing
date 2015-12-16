@@ -8,6 +8,6 @@ public class AfterActions {
 
     @After
     public void tearDown() {
-        SeleniumDriver.tearDown();
+        //SeleniumDriver.tearDown();
     }
 }

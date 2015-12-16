@@ -23,7 +23,21 @@ public class HomePageActions {
         locators.loginLink.click();
     }
 
+    public void goToAddItemPage() {
+        locators.newItemsLink.click();
+    }
+
     public boolean isLogoutButton() {
         return SeleniumHelper.isElementPresent(locators.logoutButton);
+    }
+
+    public void logoutFromSystem(){
+        locators.logoutButton.click();
+    }
+
+    public boolean isUserNotLogged() {
+        return SeleniumHelper.isElementPresent(locators.loginLink);
+
+
     }
 }
